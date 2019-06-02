@@ -1,0 +1,9 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  font-size: 1vw;
+  background-color: black;
+}
