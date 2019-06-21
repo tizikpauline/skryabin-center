@@ -19,7 +19,7 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  height: 5vh;
+  height: 8.5vh;
 
   font-family: "TT Commons Regular";
   font-size: 1.5rem;
@@ -28,7 +28,7 @@ hr {
 }
 
 header {
-  height: 100vh;
+  height: 110vh;
   background-image: url("../images/diamonds.svg");
   background-size: cover;
 
@@ -42,13 +42,18 @@ header ul {
 }
 
 header li {
-  padding-right: 2vw;
+  padding-right: 3vw;
 }
 
 .heading-section {
   float: right;
   width: 25%;
-  margin-right: 3vw;
+  margin-right: 4vw;
+}
+
+.menu img {
+  padding-left: 3vw;
+  width: 10%;
 }
 
 hr {
@@ -68,6 +73,7 @@ hr {
 .heading-title span {
   font-family: "Pitcrew";
   font-size: 8rem;
+  /* text-transform: uppercase; */
   color: #F013FF;
 }
 
@@ -86,6 +92,7 @@ hr {
   flex-direction: row;
   align-items: flex-start;
   padding-top: 8vw;
+  height: 100vh;
 }
 
 .my-info p {
@@ -94,8 +101,9 @@ hr {
   line-height: 3.6rem;
   color: white;
   width: 80%;
-  margin-left: 15vw;
-  padding-right: 4vw;
+  margin-left: -15vw;
+  padding-right: 33vw;
+  opacity: 0;
 }
 
 .my-info span {
@@ -107,13 +115,57 @@ hr {
 .my-info img {
   float: right;
   width: 35%;
-  margin-right: -25vw;
+  margin-right: -24vw;
+
+}
+
+.about-project {
+  height: 100vh;
 }
 
 .project-info {
   font-family: "TT Commons Medium";
-  font-size: 4.5rem;
-  line-height: 5rem;
+  font-size: 5rem;
+  line-height: 6.5rem;
   color: white;
   padding-top: 8vw;
+  height: 100vh;
+}
+
+.project-info p {
+  position: absolute;
+  z-index: 3;
+  margin-left: 15vw;
+  width: 60%;
+}
+
+/* .project-info span:nth-of-type(1) {
+  background-image: url(../images/line1.svg);
+  background-size: 100%;
+  background-repeat: ;
+  background-position: 0% 130%;
+
+} */
+
+.project-info span:nth-of-type(2) {
+  background-image: url(../images/line-small.svg);
+  background-size: 10%;
+  background-repeat: repeat-x;
+  background-position: 100% 100%;
+}
+
+.project-info img:nth-of-type(1){
+  position: absolute;
+  z-index: 1;
+  width: 40%;
+  margin-left: 15vw;
+  margin-top: 5vw;
+}
+
+.project-info img:nth-of-type(2) {
+  position: absolute;
+  z-index: 2;
+  margin-left: 46vw;
+  margin-top: 5vw;
+  width: 50%;
 }
