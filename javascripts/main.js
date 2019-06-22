@@ -1,10 +1,3 @@
-// $(window).scroll(function() {
-//   $('span:nth-of-type(1)').css({
-//     "transform": "translate(100vw,0)",
-//     "-webkit-transform": "translate(100vw,0)",
-//     "transition": "1s"
-//   })
-// })
 window.onscroll = function() {scrollingFunction()};
 
 function scrollingFunction() {
@@ -50,7 +43,7 @@ function scrollingFunction() {
       "position": "fixed"
     })
 
-    $('header li').css({
+    $('header a').css({
       "padding-bottom": "1vw"
     })
 
@@ -110,7 +103,7 @@ function scrollingFunction() {
       "position": "fixed"
     })
 
-    $('header li').css({
+    $('header a').css({
       "padding-bottom": "1vw"
     })
 
@@ -126,7 +119,7 @@ function scrollingFunction() {
       "margin-top": "0",
       "margin-left": "0",
     })
-    $('header li').css({
+    $('header a').css({
       "padding-bottom": "0"
     })
   }
@@ -147,3 +140,12 @@ $('.project-info').mouseleave(function() {
     "transition": "0.5s"
   })
 })
+
+$(document).ready(function(){
+  $(".menu").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+});

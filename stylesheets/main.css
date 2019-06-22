@@ -42,8 +42,10 @@ header ul {
   justify-content: space-between;
 }
 
-header li {
+header a {
   padding-right: 3vw;
+  text-decoration: none;
+  color: white;
 }
 
 .heading-section {
@@ -56,25 +58,6 @@ header li {
   padding-left: 3vw;
   width: 10%;
 }
-
-/* .menu-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  font-family: "TT Commons Regular";
-  font-size: 1.5rem;
-  color: white;
-  text-transform: uppercase;
-  padding-left: 3vw; */
-  /* opacity: 0; */
-  /* position: sticky;
-} */
-
-/* .menu-right nav li {
-  padding-bottom: 1vw;
-} */
 
 hr {
   border: none;
@@ -107,7 +90,7 @@ hr {
   margin-top: 2vh;
 }
 
-.about-author {
+#about-author {
   height: 100vh;
 }
 
@@ -142,7 +125,7 @@ hr {
 
 }
 
-.about-project {
+#about-project {
   height: 100vh;
 }
 
@@ -201,12 +184,7 @@ hr {
   filter: grayscale(0);
   transition: 0.5s;
 } */
-
-.ideas-info {
-  overflow-x: none;
-}
-
-.ideas-info p:first-of-type {
+#ideas-info p {
   font-family: "TT Commons Regular";
   font-size: 2rem;
   line-height: 2.4rem;
@@ -215,11 +193,21 @@ hr {
   margin-left: 15vw;
 }
 
-.ideas-info p:first-of-type {
-  padding-bottom: 1.5vw;
+#ideas-info p:first-of-type {
+  font-family: "TT Commons Regular";
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: white;
+  width: 55%;
+  margin-left: 15vw;
+  padding-bottom: 3vw;
 }
 
-.ideas-info h4:nth-of-type(2) {
+#ideas-info p:nth-of-type(2) {
+  padding-bottom: 8vw;
+}
+
+#ideas-info h4:nth-of-type(2) {
   margin-bottom: 6vw;
 }
 
@@ -228,37 +216,53 @@ hr {
   padding-right: 3vw;
 }
 
-.pic-1 h4, .pic-2 h4 {
+.pic-1 h4, .pic-2 h4, .pic-3 h4, .pic-5 h4 {
   font-family: "TT Commons Light";
   font-size: 2rem;
   line-height: 2.4rem;
   color: white;
+  width: 35vw;
 }
 
-.pic-1 {
+.pic-4 p {
+  margin-bottom: 8vw;
+}
+
+/* .pic-5 h4 {
+  margin-left: 15vw;
+} */
+
+.pic-1, .pic-3 {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: flex-start;
   margin-left: 15vw;
   margin-bottom: 8vw;
-  overflow-x: none;
 }
 
-.pic-2 {
+.pic-2, .pic-5 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 15vw;
   margin-bottom: 8vw;
-  overflow-x: hidden;
 }
 
-.pic-1 img, .pic-2 img {
+.pic-1 img, .pic-2 img, .pic-3 img, .pic-5 img {
   width: 40%;
 }
 
-.pic-1 img {
+.pic-1 img, .pic-3 img {
   padding-right: 3vw;
+}
+
+.phrase {
+  margin-bottom: 8vw;
+}
+
+.pic-5 h4 {
+  width: 20vw;
+  padding-right: 4vw;
 }
