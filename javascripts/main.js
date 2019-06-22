@@ -131,3 +131,19 @@ function scrollingFunction() {
     })
   }
 }
+
+$('.project-info').mouseover(function() {
+  $('.project-info img:nth-of-type(2)').css({
+    "-webkit-filter": "grayscale(0)",
+    "filter": "grayscale(0)",
+    "transition": "0.5s"
+  })
+})
+
+$('.project-info').mouseleave(function() {
+  $('.project-info img:nth-of-type(2)').css({
+    "-webkit-filter": "grayscale(100%)",
+    "filter": "grayscale(100%)",
+    "transition": "0.5s"
+  })
+})
