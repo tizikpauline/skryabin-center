@@ -23,12 +23,12 @@ function scrollingFunction() {
     $('span:nth-of-type(1)').css({
       "transform": "translate(0vw,0)",
       "-webkit-transform": "translate(0vw,0)",
-      "transition": "3s"
+      "transition": "2s"
     })
     $('span:nth-of-type(2)').css({
       "transform": "translate(0vw,0)",
       "-webkit-transform": "translate(0vw,0)",
-      "transition": "3s"
+      "transition": "2s"
     })
   }
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
@@ -39,6 +39,21 @@ function scrollingFunction() {
       "opacity": "1"
     })
 
+    $('header ul').css({
+      "margin-top": "18vw",
+      "margin-left": "3vw",
+      "flex-direction": "column",
+      "justify-content": "space-between",
+      "align-items": "flex-start",
+      // "transition": "1s",
+      "opacity": "1",
+      "position": "fixed"
+    })
+
+    $('header li').css({
+      "padding-bottom": "1vw"
+    })
+
   } else {
     $('.my-info p').css({
       "transform": "translate(0vw,0)",
@@ -47,26 +62,42 @@ function scrollingFunction() {
       "opacity": "0"
     })
   }
-  // if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-  //   $('.menu').css({
+
+  // if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+  //   $('header ul').css({
+  //     "margin-top": "18vw",
+  //     "margin-left": "3vw",
   //     "flex-direction": "column",
   //     "justify-content": "space-between",
   //     "align-items": "flex-start",
-  //     "transition": "2s",
-  //     "opacity": "1",
+  //     "transition": "1s",
+  //     "opacity": "0",
   //     "position": "fixed"
   //   })
   //
+  //   $('header li').css({
+  //     "padding-bottom": "1vw"
+  //   })
+  //
   // } else {
-  //   $('.menu').css({
-  //     "flex-direction": "row",
+  //   $('header ul').css({
+  //     "margin-top": "18vw",
+  //     "margin-left": "3vw",
+  //     "flex-direction": "column",
   //     "justify-content": "space-between",
-  //     "align-items": "flex-end",
+  //     "align-items": "flex-start",
   //     "transition": "1s",
   //     "opacity": "1",
-  //     "float": "right"
+  //     "float": "right",
+  //     "margin-top": "0",
+  //     "margin-left": "0",
+  //   })
+  //   $('header li').css({
+  //     "padding-bottom": "0"
   //   })
   // }
+
+
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     $('header ul').css({
       "margin-top": "18vw",

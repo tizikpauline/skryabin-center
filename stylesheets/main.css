@@ -170,22 +170,22 @@ hr {
 
 .project-info span:nth-of-type(2) {
   background-image: url(../images/line-small.svg);
-  background-size: 10%;
+  background-size: 11%;
   background-repeat: repeat-x;
   background-position: 100% 100%;
 }
 
 .project-info img:nth-of-type(1){
   position: absolute;
-  z-index: 1;
-  width: 40%;
+  z-index: 2;
+  width: 32%;
   margin-left: 15vw;
   margin-top: 5vw;
 }
 
 .project-info img:nth-of-type(2) {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   margin-left: 46vw;
   margin-top: 5vw;
   width: 50%;
