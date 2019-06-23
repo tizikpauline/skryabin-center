@@ -117,10 +117,24 @@ function scrollingFunction() {
       "opacity": "1",
       "float": "right",
       "margin-top": "0",
-      "margin-left": "0",
+      "margin-left": "0"
     })
+
     $('header a').css({
       "padding-bottom": "0"
+    })
+
+    $('.about-author').mouseover(function() {
+      $('header a:nth-of-type(1)').css({
+        "text-decoration": "line-through",
+        "text-decoration-color": "#F013FF"
+      })
+    })
+
+    $('.about-author').mouseout(function() {
+      $('header a:nth-of-type(1)').css({
+        "text-decoration": "none"
+      })
     })
   }
 }
@@ -140,6 +154,65 @@ $('.project-info').mouseleave(function() {
     "transition": "0.5s"
   })
 })
+
+$('#posters').mouseover(function() {
+  $('#posters').css({
+    "background-color": "white",
+    "transition": "0.5s"
+  })
+
+  $('header a').css({
+    "color": "black",
+    "transition": "0.5s"
+  })
+
+  $('.heading-section hr').css({
+    "color": "black",
+    "background-color": "black",
+    "transition": "0.5s"
+  })
+
+  $('.heading-section h1').css({
+    "color": "black",
+    "transition": "0.5s"
+  })
+})
+
+$('#posters').mouseleave(function() {
+  $('#posters').css({
+    "background-color": "black",
+    "paddin-top": "0",
+    "transition": "0.5s"
+  })
+
+  $('header a').css({
+    "color": "white",
+    "transition": "0.5s"
+  })
+
+  $('.heading-section hr').css({
+    "color": "white",
+    "background-color": "white",
+    "transition": "0.5s"
+  })
+
+  $('.heading-section h1').css({
+    "color": "white",
+    "transition": "0.5s"
+  })
+})
+//
+// $('.menu').on('click', 'a:nth-of-type(1)', function(){
+//   $('.about-author').mouseenter(function() {
+//     y = 1
+//   })
+//   while (y == 1) {
+//     $('.menu a:nth-of-type(1)').css({
+//       "text-decoration": "line-through",
+//       "text-decoration-color": "#F013FF"
+//     })
+//   }
+// })
 
 $(document).ready(function(){
   $(".menu").on("click","a", function (event) {
