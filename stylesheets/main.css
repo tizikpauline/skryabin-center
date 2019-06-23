@@ -289,7 +289,7 @@ hr {
 }
 
 #branding {
-  margin-bottom: 18vw; 
+  margin-bottom: 18vw;
 }
 
 .branding-info {
@@ -529,10 +529,31 @@ hr {
 
 .part-6 iframe {
   margin-bottom: 4vw;
+  width: 53.4vw;
+  height: 30vw;
 }
 
 .part-6 p {
   text-align: left;
+}
+
+.graphic-posters {
+  padding-top: 8vw;
+}
+
+.poster-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.poster-description p {
+  font-family: "TT Commons Regular";
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: white;
+  width: 34vw;
 }
 
 #contacts a {
