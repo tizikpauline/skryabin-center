@@ -184,7 +184,7 @@ hr {
   filter: grayscale(0);
   transition: 0.5s;
 } */
-#ideas-info p {
+.ideas-info p {
   font-family: "TT Commons Regular";
   font-size: 2rem;
   line-height: 2.4rem;
@@ -193,7 +193,7 @@ hr {
   margin-left: 15vw;
 }
 
-#ideas-info p:first-of-type {
+.ideas-info p:first-of-type {
   font-family: "TT Commons Regular";
   font-size: 2rem;
   line-height: 2.4rem;
@@ -203,11 +203,11 @@ hr {
   padding-bottom: 3vw;
 }
 
-#ideas-info p:nth-of-type(2) {
+.ideas-info p:nth-of-type(2) {
   padding-bottom: 8vw;
 }
 
-#ideas-info h4:nth-of-type(2) {
+.ideas-info h4:nth-of-type(2) {
   margin-bottom: 6vw;
 }
 
@@ -216,7 +216,7 @@ hr {
   padding-right: 3vw;
 }
 
-.pic-1 h4, .pic-2 h4, .pic-3 h4, .pic-5 h4 {
+.pic-1 h4, .pic-2 h4, .pic-3 h4, .pic-5 h4, .pic-6 h4, .pic-7 h4  {
   font-family: "TT Commons Light";
   font-size: 2rem;
   line-height: 2.4rem;
@@ -225,32 +225,32 @@ hr {
 }
 
 .pic-4 p {
-  margin-bottom: 8vw;
+  margin-bottom: 12vw;
 }
 
 /* .pic-5 h4 {
   margin-left: 15vw;
 } */
 
-.pic-1, .pic-3 {
+.pic-1, .pic-3, .pic-6 {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: flex-start;
   margin-left: 15vw;
-  margin-bottom: 8vw;
+  margin-bottom: 12vw;
 }
 
-.pic-2, .pic-5 {
+.pic-2, .pic-5, .pic-7 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   margin-left: 15vw;
-  margin-bottom: 8vw;
+  margin-bottom: 12vw;
 }
 
-.pic-1 img, .pic-2 img, .pic-3 img, .pic-5 img {
+.pic-1 img, .pic-2 img, .pic-3 img, .pic-5 img, .pic-6 img, .pic-7 img {
   width: 40%;
 }
 
@@ -263,12 +263,96 @@ hr {
 } */
 
 .phrase {
-  margin-bottom: 8vw;
+  font-family: "TT Commons Light";
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: white;
+  width: 50vw;
+
+  margin-left: 15vw;
+  margin-bottom: 12vw;
 }
 
 .pic-5 h4 {
   width: 20vw;
   padding-right: 4vw;
+}
+
+.pic-8 {
+  text-align: center;
+  margin-bottom: 18vw;
+}
+
+.pic-8 img {
+  text-align: center;
+  width: 50vw;
+}
+
+.branding-info {
+  padding-top: 8vw;
+  margin-left: 18vw;
+}
+
+.branding-info img {
+  width: 50vw;
+  margin-bottom: 15vw;
+}
+
+.part-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8vw;
+}
+
+.text {
+  width: 45vw;
+}
+
+.part-1 .text h2, .part-2 h2, .part-3 .text h2 {
+  font-family: "TT Commons Bold";
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 2vw;
+}
+
+.part-1 .text p, .part-2 p, .part-3 .text p {
+  font-family: "TT Commons Regular";
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: white;
+  width: 34vw;
+}
+
+.part-1 .text p {
+  width: 42vw;
+}
+
+.part-1 img {
+  width: 30vw;
+  margin-right: 4vw;
+  margin-bottom: 0;
+}
+
+.part-2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8vw;
+}
+
+.part-3 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8vw;
+}
+
+.part-3 img {
+  width: 56vw;
+  margin-right: 3vw;
+  margin-bottom: 0;
 }
 
 #contacts a {
