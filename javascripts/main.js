@@ -413,6 +413,12 @@ if (window.innerWidth < 768) {
     })
   })
 }
+
+if (window.innerWidth > 768) {
+  $('.menu-button').css({
+    "display": "none"
+  })
+}
 // else {
 //   $('.close-button').css({
 //     "display": "none"
