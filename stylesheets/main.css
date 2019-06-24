@@ -756,3 +756,13 @@ hr {
   margin-left: 15vw;
   padding-bottom: 6vw;
 }
+
+/*  */
+
+#spot {
+  width:1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 0 0 999px 200px #84F0FF;
+  position:absolute;
+}

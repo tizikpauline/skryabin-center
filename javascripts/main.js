@@ -315,3 +315,33 @@ $(document).ready(function(){
     $('body,html').animate({scrollTop: top}, 1500);
   });
 });
+
+// spot
+
+// var screen = document.body;
+//
+// screen.addEventListener("mousemove", function(event) {
+//   move(event);
+// });
+//
+// function move(e) {
+//   var x = e.clientX;
+//   var y = e.clientY;
+//   var spot = document.getElementById("spot");
+//   spot.style.left = x+"px";
+//   spot.style.top = y+"px";
+// }
+
+var screen = document.body;
+
+$('.branding-info').mousemove(function (event) {
+  move(event);
+});
+
+function move(e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  var spot = document.getElementById("spot");
+  spot.style.left = x+"px";
+  spot.style.top = y+"px";
+}
