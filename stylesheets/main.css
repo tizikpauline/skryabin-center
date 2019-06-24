@@ -559,7 +559,7 @@ hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 8vw;
+  margin-bottom: -8vw;
 }
 
 .posters-description p {
