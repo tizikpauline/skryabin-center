@@ -565,6 +565,10 @@ hr {
   width: 34vw;
 }
 
+.graphic-posters img {
+  cursor: pointer;
+}
+
 .posters-description img {
   width: 30vw;
   box-shadow: 0 0 2vw rgba(0,0,0,0.5);

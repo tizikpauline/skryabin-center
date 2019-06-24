@@ -124,15 +124,93 @@ function scrollingFunction() {
       "padding-bottom": "0"
     })
 
-    $('.about-author').mouseover(function() {
+    $('#about-author').mouseover(function() {
       $('header a:nth-of-type(1)').css({
         "text-decoration": "line-through",
         "text-decoration-color": "#F013FF"
       })
     })
 
-    $('.about-author').mouseout(function() {
+    $('#about-author').mouseout(function() {
       $('header a:nth-of-type(1)').css({
+        "text-decoration": "none"
+      })
+    })
+
+    $('#about-project').mouseover(function() {
+      $('header a:nth-of-type(2)').css({
+        "text-decoration": "line-through",
+        "text-decoration-color": "#F013FF"
+      })
+    })
+
+    $('#about-project').mouseout(function() {
+      $('header a:nth-of-type(2)').css({
+        "text-decoration": "none"
+      })
+    })
+
+    $('#ideas').mouseover(function() {
+      $('header a:nth-of-type(3)').css({
+        "text-decoration": "line-through",
+        "text-decoration-color": "#F013FF"
+      })
+    })
+
+    $('#ideas').mouseout(function() {
+      $('header a:nth-of-type(3)').css({
+        "text-decoration": "none"
+      })
+    })
+
+    $('#branding').mouseover(function() {
+      $('header a:nth-of-type(4)').css({
+        "text-decoration": "line-through",
+        "text-decoration-color": "#F013FF"
+      })
+    })
+
+    $('#branding').mouseout(function() {
+      $('header a:nth-of-type(4)').css({
+        "text-decoration": "none"
+      })
+    })
+
+    $('#posters').mouseover(function() {
+      $('header a:nth-of-type(5)').css({
+        "text-decoration": "line-through",
+        "text-decoration-color": "#F013FF"
+      })
+    })
+
+    $('#posters').mouseout(function() {
+      $('header a:nth-of-type(5)').css({
+        "text-decoration": "none"
+      })
+    })
+
+    $('#book').mouseover(function() {
+      $('header a:nth-of-type(6)').css({
+        "text-decoration": "line-through",
+        "text-decoration-color": "#F013FF"
+      })
+    })
+
+    $('#book').mouseout(function() {
+      $('header a:nth-of-type(6)').css({
+        "text-decoration": "none"
+      })
+    })
+
+    $('#contacts').mouseover(function() {
+      $('header a:nth-of-type(7)').css({
+        "text-decoration": "line-through",
+        "text-decoration-color": "#F013FF"
+      })
+    })
+
+    $('#contacts').mouseout(function() {
+      $('header a:nth-of-type(7)').css({
         "text-decoration": "none"
       })
     })
@@ -201,9 +279,24 @@ $('#posters').mouseleave(function() {
     "transition": "0.5s"
   })
 })
-//
+
+$('.graphic-posters img').mouseover(function() {
+  $(this).css({
+    "transform": "scale(1.1)",
+    "transition": "1s"
+  })
+})
+
+$('.graphic-posters img').mouseleave(function() {
+  $(this).css({
+    "transform": "scale(1)",
+    "transition": "1s"
+  })
+})
+
+
 // $('.menu').on('click', 'a:nth-of-type(1)', function(){
-//   $('.about-author').mouseenter(function() {
+//   $('#about-author').mouseenter(function() {
 //     y = 1
 //   })
 //   while (y == 1) {
