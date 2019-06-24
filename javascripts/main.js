@@ -326,7 +326,8 @@ if (window.innerWidth < 768) {
     })
 
     $('header ul a').css({
-      "display": "block"
+      "display": "block",
+      "padding-bottom": "4vw"
     })
 
     $('header ul').css({
@@ -411,15 +412,16 @@ if (window.innerWidth < 768) {
       "transition": "2s"
     })
   })
-} else {
-  $('.close-button').css({
-    "display": "none"
-  })
-
-  $('.menu-button').css({
-    "display": "none"
-  })
 }
+// else {
+//   $('.close-button').css({
+//     "display": "none"
+//   })
+//
+//   $('.menu-button').css({
+//     "display": "none"
+//   })
+// }
 // spot
 
 // var screen = document.body;
