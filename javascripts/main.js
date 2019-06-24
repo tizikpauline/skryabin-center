@@ -334,7 +334,7 @@ $(document).ready(function(){
 
 var screen = document.body;
 
-$('.branding-info').mousemove(function (event) {
+$(screen).mousemove(function (event) {
   move(event);
 });
 
