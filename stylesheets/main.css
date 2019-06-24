@@ -17,7 +17,6 @@ hr {
 
 .menu {
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-between;
   align-items: flex-end;
   height: 8.5vh;
@@ -26,6 +25,13 @@ hr {
   font-size: 1.5rem;
   color: white;
   text-transform: uppercase;
+}
+
+.close-button {
+  margin-top: 1vw;
+  display: none;
+  width: 7vw;
+  cursor: pointer;
 }
 
 header {
@@ -38,8 +44,8 @@ header {
 
 header ul {
   display: flex;
-  /* flex-direction: row; */
   justify-content: space-between;
+  margin-top: 0;
 }
 
 header a {
@@ -60,9 +66,14 @@ header a:nth-of-type(1):hover, header a:nth-of-type(2):hover, header a:nth-of-ty
   margin-right: 4vw;
 }
 
-.menu img {
+.menu img:nth-of-type(1) {
   padding-left: 3vw;
   width: 10%;
+}
+
+.menu-button {
+  display: none;
+  width: 8vw;
 }
 
 hr {
@@ -82,7 +93,6 @@ hr {
 .heading-title span {
   font-family: "Pitcrew";
   font-size: 8rem;
-  /* text-transform: uppercase; */
   color: #F013FF;
 }
 
@@ -151,14 +161,6 @@ hr {
   width: 60%;
 }
 
-/* .project-info span:nth-of-type(1) {
-  background-image: url(../images/line1.svg);
-  background-size: 100%;
-  background-repeat: ;
-  background-position: 0% 130%;
-
-} */
-
 .project-info span:nth-of-type(2) {
   background-image: url(../images/line-small.svg);
   background-size: 11%;
@@ -185,11 +187,6 @@ hr {
   transition: 0.5s;
 }
 
-/* .project-info img:nth-of-type(2):hover {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
-  transition: 0.5s;
-} */
 .ideas-info p {
   font-family: "TT Commons Regular";
   font-size: 2rem;
@@ -200,12 +197,6 @@ hr {
 }
 
 .ideas-info p:first-of-type {
-  font-family: "TT Commons Regular";
-  font-size: 2rem;
-  line-height: 2.4rem;
-  color: white;
-  width: 55%;
-  margin-left: 15vw;
   padding-bottom: 3vw;
 }
 
@@ -234,10 +225,6 @@ hr {
   margin-bottom: 12vw;
 }
 
-/* .pic-5 h4 {
-  margin-left: 15vw;
-} */
-
 .pic-1, .pic-3, .pic-6 {
   display: flex;
   flex-direction: row-reverse;
@@ -263,10 +250,6 @@ hr {
 .pic-1 img, .pic-3 img {
   padding-right: 3vw;
 }
-
-/* .pic-3 img {
-  border-radius: 5px;
-} */
 
 .phrase {
   font-family: "TT Commons Light";
@@ -644,7 +627,7 @@ hr {
 
 .github-pages iframe {
   border-radius: 0 0 2vw 2vw;
-  /* margin-left: -1vw; */
+  margin-left: -0.05vw;
   /* padding-top: 4vw; */
 }
 
@@ -765,4 +748,98 @@ hr {
   border-radius: 50%;
   box-shadow: 0 0 999px 200px #84F0FF;
   position:absolute;
+}
+
+/*  */
+
+h3 {
+  font-family: "TT Commons Bold";
+  font-size: 3rem;
+  margin-top: 8vw;
+  margin-bottom: 2vw;
+  margin-left: 4vw;
+  color: white;
+}
+
+.cross {
+  margin-top: 3vw;
+  width: 3vw;
+  margin-left: 4vw;
+}
+
+.posters-neuro {
+  margin-top: 8vw;
+  margin-left: 4vw;
+}
+
+.posters-neuro img {
+  width: 35vw;
+}
+
+@media (max-width: 1024px) {
+  #about-author {
+    height: 90vh;
+  }
+
+  .menu img:nth-of-type(1) {
+    padding-left: 4vw;
+    width: 13%;
+  }
+
+  .menu {
+    height: 10vh;
+    font-size: 1.6rem;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  #about-project {
+    height: 90vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .ideas-info p {
+    font-size: 3rem;
+    line-height: 2.88rem;
+  }
+
+  .menu {
+    font-size: 4rem;
+  }
+
+  .menu-button {
+    display: block;
+    margin-right: 3vw;
+    cursor: pointer;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  header ul a {
+    /* margin-right: -200vw; */
+    display: none;
+    padding-bottom: 4vw;
+  }
+
+  .menu img:nth-of-type(1) {
+    padding-left: 4vw;
+    width: 23%;
+  }
+
+  hr {
+    height: 2px;
+  }
+
+  .heading-section h1 {
+    font-family: "TT Commons Regular";
+    font-size: 3rem;
+  }
+
+}
+
+@media (max-width:) {
+
 }
