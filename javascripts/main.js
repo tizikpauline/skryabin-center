@@ -316,100 +316,110 @@ $(document).ready(function(){
   });
 });
 
-$('.menu-button').click(function() {
-  $('.menu').css({
-    "height": "100vh",
-    "background-color": "black",
-    "align-items": "flex-start"
+
+if (window.innerWidth < 768) {
+  $('.menu-button').click(function() {
+    $('.menu').css({
+      "height": "100vh",
+      "background-color": "black",
+      "align-items": "flex-start"
+    })
+
+    $('header ul a').css({
+      "display": "block"
+    })
+
+    $('header ul').css({
+      "display": "flex",
+      "flex-direction": "column",
+      "align-items": "flex-start",
+      "transition": "2s",
+      "margin-top": "2vw"
+    })
+
+    $('.menu img:nth-of-type(1)').css({
+      "display": "none",
+      "transition": "2s"
+    })
+
+    $('.menu-button').css({
+      "display": "none",
+      "transition": "2s"
+    })
+
+    $('.close-button').css({
+      "display": "block",
+      "margin-left": "3vw",
+      "transition": "2s"
+    })
   })
 
-  $('header ul a').css({
-    "display": "block"
+  $('.close-button').click(function() {
+    $('.menu').css({
+      "height": "8.5vh",
+      "background-color": "black",
+      "align-items": "flex-end"
+    })
+
+    $('header ul').css({
+      "display": "none",
+      "transition": "2s",
+      "margin-top": "0"
+    })
+
+    $('.menu img:nth-of-type(1)').css({
+      "display": "block",
+      "transition": "2s"
+    })
+
+    $('.menu-button').css({
+      "display": "inline",
+      "transition": "2s"
+    })
+
+    $('.close-button').css({
+      "display": "none",
+      "transition": "2s"
+    })
   })
 
-  $('header ul').css({
-    "display": "flex",
-    "flex-direction": "column",
-    "align-items": "flex-start",
-    "transition": "2s",
-    "margin-top": "2vw"
-  })
+  $('header a').click(function() {
+    $('.menu').css({
+      "height": "8.5vh",
+      "background-color": "black",
+      "align-items": "flex-end"
+    })
 
-  $('.menu img:nth-of-type(1)').css({
-    "display": "none",
-    "transition": "2s"
+    $('header ul').css({
+      "display": "none",
+      "transition": "2s",
+      "margin-top": "0"
+    })
+
+    $('.menu img:nth-of-type(1)').css({
+      "display": "block",
+      "transition": "2s"
+    })
+
+    $('.menu-button').css({
+      "display": "inline",
+      "transition": "2s"
+    })
+
+    $('.close-button').css({
+      "display": "none",
+      "transition": "2s"
+    })
+  })
+} else {
+  $('.close-button').css({
+    "display": "none"
   })
 
   $('.menu-button').css({
-    "display": "none",
-    "transition": "2s"
+    "display": "none"
   })
-
-  $('.close-button').css({
-    "display": "block",
-    "margin-left": "3vw",
-    "transition": "2s"
-  })
-})
-
-$('.close-button').click(function() {
-  $('.menu').css({
-    "height": "8.5vh",
-    "background-color": "black",
-    "align-items": "flex-end"
-  })
-
-  $('header ul').css({
-    "display": "none",
-    "transition": "2s",
-    "margin-top": "0"
-  })
-
-  $('.menu img:nth-of-type(1)').css({
-    "display": "block",
-    "transition": "2s"
-  })
-
-  $('.menu-button').css({
-    "display": "inline",
-    "transition": "2s"
-  })
-
-  $('.close-button').css({
-    "display": "none",
-    "transition": "2s"
-  })
-})
-
-$('header a').click(function() {
-  $('.menu').css({
-    "height": "8.5vh",
-    "background-color": "black",
-    "align-items": "flex-end"
-  })
-
-  $('header ul').css({
-    "display": "none",
-    "transition": "2s",
-    "margin-top": "0"
-  })
-
-  $('.menu img:nth-of-type(1)').css({
-    "display": "block",
-    "transition": "2s"
-  })
-
-  $('.menu-button').css({
-    "display": "inline",
-    "transition": "2s"
-  })
-
-  $('.close-button').css({
-    "display": "none",
-    "transition": "2s"
-  })
-})
-
+}
 // spot
 
 // var screen = document.body;
