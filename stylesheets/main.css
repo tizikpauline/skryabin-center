@@ -644,6 +644,7 @@ hr {
 
 .github-pages iframe {
   border-radius: 0 0 2vw 2vw;
+  /* margin-left: -1vw; */
   /* padding-top: 4vw; */
 }
 
