@@ -187,6 +187,10 @@ hr {
   transition: 0.5s;
 }
 
+/* .ideas-info {
+  padding-top: 8vw;
+} */
+
 .ideas-info p {
   font-family: "TT Commons Regular";
   font-size: 2rem;
@@ -198,6 +202,7 @@ hr {
 
 .ideas-info p:first-of-type {
   padding-bottom: 3vw;
+  margin-top: 2vw;
 }
 
 .ideas-info p:nth-of-type(2) {
@@ -437,7 +442,7 @@ hr {
 }
 
 .part-5 img {
-  width: 50%;
+  width: 45%;
   margin-right: 4vw;
   margin-bottom: 0;
 }
@@ -778,7 +783,7 @@ h3 {
 
 @media (max-width: 1024px) {
   #about-author {
-    height: 90vh;
+    height: 60vw;
   }
 
   .menu img:nth-of-type(1) {
@@ -794,11 +799,29 @@ h3 {
   }
 
   #about-project {
-    height: 90vh;
+    height: 65vw;
   }
 }
 
 @media (max-width: 768px) {
+  .heading-section {
+    float: right;
+    width: 30%;
+    margin-right: 4vw;
+  }
+
+  .heading-title span {
+    font-size: 10rem;
+  }
+
+  #about-author {
+    height: 55vw;
+  }
+
+  #about-project {
+    height: 60vw;
+  }
+
   .ideas-info p {
     font-size: 3rem;
     line-height: 2.88rem;
@@ -838,8 +861,39 @@ h3 {
     font-size: 3rem;
   }
 
+  .ideas-info p {
+    width: 70%;
+  }
+
+  .ideas-info p:first-of-type {
+    margin-top: -12vw;
+  }
+
+  .part-3 img {
+    width: 40vw;
+    margin-right: 3vw;
+    margin-bottom: 0;
+  }
+
+  hr {
+    height: 2px;
+  }
+
+  .heading-section h1 {
+    font-size: 4rem;
+  }
 }
 
-@media (max-width:) {
+@media (max-width: 375px) {
+  .heading-title span {
+    font-size: 15rem;
+  }
 
+  hr {
+    height: 3px;
+  }
+
+  .heading-section h1 {
+    font-size: 5rem;
+  }
 }
