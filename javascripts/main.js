@@ -309,7 +309,7 @@ if (window.innerWidth < 768) {
     "display": "inline",
     "transition": "2s"
   })
-  
+
   $('.menu-button').click(function() {
     $('.menu').css({
       "height": "100vh",
@@ -367,6 +367,11 @@ if (window.innerWidth < 768) {
 
     $('.close-button').css({
       "display": "none",
+      "transition": "2s"
+    })
+
+    $('.menu-button').css({
+      "display": "inline",
       "transition": "2s"
     })
   })
