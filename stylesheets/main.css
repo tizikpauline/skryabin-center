@@ -148,6 +148,7 @@ hr {
   float: right;
   width: 35%;
   margin-right: -24vw;
+  margin-left: 0;
 }
 
 #about-project {
@@ -837,6 +838,7 @@ h3 {
     float: right;
     width: 55%;
     margin-right: -30vw;
+    margin-left: 0;
   }
 
   .my-info p {
@@ -1103,7 +1105,7 @@ h3 {
   }
 
   hr {
-    height: 3px;
+    height: 2px;
   }
 
   .heading-title {
@@ -1112,10 +1114,74 @@ h3 {
 
 
   .heading-section h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
+
+  #about-author {
+    height: 90vh;
+  }
+
+  .my-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 15vw;
+   }
+
+   .my-info img {
+    float: right;
+    width: 80%;
+    margin-left: 10vw;
+   }
+
+   .my-info p {
+     width: 100%;
+     font-size: 6rem;
+     line-height: 7.2rem;
+     padding-right: 5vw;
+     margin-bottom: 8vw;
+   }
+
+   #about-project {
+    height: 90vw;
+}
+
+   .project-info {
+      /* position: relative; */
+      /* display: block; */
+      font-size: 6rem;
+      line-height: 7.2rem;
+      padding-top: 15vw;
+      /* height: 80vh; */
+      /* padding-bottom: 8vw; */
+    }
+
+    .project-info p {
+      width: 70%;
+    }
+
+    .project-info img:nth-of-type(2) {
+    margin-left: 28vw;
+    margin-top: 5vw;
+    width: 70%;
+}
+
+.ideas-info {
+    padding-top: 15vw;
+}
+
+.ideas-info p {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    margin-left: 10vw;
+}
 
   .posters-description img {
     margin-right: -10vw;
   }
+
+  .heading-title span:last-of-type {
+    float: right;
+    margin-top: 0;
+   }
 }
