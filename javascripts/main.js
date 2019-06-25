@@ -422,7 +422,7 @@ if (window.innerWidth > 768) {
 // }
 // spot
 
-// var screen = document.body;
+var screen = document.body;
 //
 // screen.addEventListener("mousemove", function(event) {
 //   move(event);
@@ -436,7 +436,7 @@ if (window.innerWidth > 768) {
 //   spot.style.top = y+"px";
 // }
 
-// var screen = document.body;
+// var screen = '.part-1';
 //
 // $(screen).mousemove(function (event) {
 //   move(event);
