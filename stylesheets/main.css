@@ -306,6 +306,11 @@ hr {
   width: 50vw;
   margin-bottom: 15vw;
 }
+/*
+.branding-info img:nth-of-type(1) {
+  width: 70vw;
+  margin-bottom: 15vw;
+} */
 
 .part-1 {
   display: flex;
@@ -894,7 +899,9 @@ h3 {
 
    .part-4 img, .part-5 img {
      width: 45vw;
+     height: 30vw;
    }
+
 
    .part-5 .colors-2 p {
      font-size: 2rem;
@@ -1020,7 +1027,7 @@ h3 {
     padding-top: 10vw;
     margin-left: 10vw;
     margin-right: 10vw;
-    margin-bottom: 25vw;
+    margin-bottom: 18vw;
   }
 
   .posters-description {
@@ -1176,6 +1183,33 @@ h3 {
     margin-left: 10vw;
 }
 
+.pic-1 h4, .pic-2 h4, .pic-3 h4, .pic-5 h4, .pic-6 h4, .pic-7 h4 {
+  font-size: 4rem;
+  line-height: 4.8rem;
+}
+
+.part-1 .text p, .part-2 p, .part-3 .text p, .part-4 .text-info .text p, .part-5 .text p, .part-6 p {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  width: 40vw;
+}
+
+.part-2 p {
+  width: 60vw;
+}
+
+.part-1 .text h2, .part-2 h2, .part-3 .text h2, .part-4 .text-info .text h2, .part-5 .text h2 {
+    font-size: 5rem;
+}
+
+.branding-info {
+    padding-top: 15vw;
+}
+
+.graphic-posters {
+    padding-top: 15vw;
+}
+
   .posters-description img {
     margin-right: -10vw;
   }
@@ -1184,4 +1218,43 @@ h3 {
     float: right;
     margin-top: 0;
    }
+
+   .book-description p {
+    font-size: 4rem;
+    line-height: 4.8rem;
+}
+
+   #contacts p, #contacts a {
+    font-size: 4rem;
+   }
+
+   .ideas-info p:nth-of-type(2) {
+    padding-bottom: 12vw;
+}
+
+    .pic-2, .pic-5, .pic-7 {
+      margin-left: 12vw;
+    }
+
+    .part-1, .part-2, .part-3, .part-4, .part-5 {
+      margin-bottom: 12vw;
+    }
+
+    .part-6 iframe {
+      margin-bottom: 10vw;
+    }
+
+    .part-5 .colors-2 p {
+      font-size: 2rem;
+      line-height: 1.2rem;
+      margin-top: 1.5vw;
+    }
+
+    /* .text-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 4vw;
+    } */
 }
