@@ -436,16 +436,16 @@ var screen = document.body;
 //   spot.style.top = y+"px";
 // }
 
-// var screen = '.part-1';
-//
-// $(screen).mousemove(function (event) {
-//   move(event);
-// });
-//
-// function move(e) {
-//   var x = e.clientX;
-//   var y = e.clientY;
-//   var spot = document.getElementById("spot");
-//   spot.style.left = x+"px";
-//   spot.style.top = y+"px";
-// }
+var screen = '.part-1';
+
+$(screen).mousemove(function (event) {
+  move(event);
+});
+
+function move(e) {
+  var x = e.clientX;
+  var y = e.clientY;
+  var spot = document.getElementById("spot");
+  spot.style.left = x+"px";
+  spot.style.top = y+"px";
+}
