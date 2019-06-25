@@ -60,9 +60,15 @@ header a {
   text-decoration: none;
 }
 
-header a:nth-of-type(1):hover, header a:nth-of-type(2):hover, header a:nth-of-type(3):hover, header a:nth-of-type(4):hover, header a:nth-of-type(5):hover, header a:nth-of-type(6):hover, header a:nth-of-type(7):hover {
+/* header a:nth-of-type(1):hover, header a:nth-of-type(2):hover, header a:nth-of-type(3):hover, header a:nth-of-type(4):hover, header a:nth-of-type(5):hover, header a:nth-of-type(6):hover, header a:nth-of-type(7):hover {
   text-decoration-line: underline;
   text-decoration-color: #F013FF;
+  transition: all 0.3s ease-out;
+} */
+
+header a:hover {
+  color: #F013FF;
+  /* text-decoration-color: #F013FF; */
   transition: all 0.3s ease-out;
 }
 
@@ -454,12 +460,12 @@ hr {
 }
 
 .part-5 .text p {
-  margin-bottom: 4vw;
+  margin-bottom: 2vw;
 }
 
 .part-5 img {
-  width: 54%;
-  height: 30%;
+  width: 46%;
+  height: 50%;
   margin-right: 4vw;
   margin-bottom: 0;
 }
@@ -470,8 +476,8 @@ hr {
   display: grid;
   grid-template-columns: 10vw 10vw 10vw;
   grid-template-rows: 4vw 4vw;
-  grid-column-gap: 2vw;
-  grid-row-gap: 2vw;
+  grid-column-gap: 1vw;
+  grid-row-gap: 1vw;
 }
 
 .color-1 {
