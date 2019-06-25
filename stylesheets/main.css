@@ -938,6 +938,17 @@ h3 {
     height: 2px;
   }
 
+  .web-posters p {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    width: 70vw;
+   }
+
+   .web-posters h2 {
+    font-size: 4rem;
+    margin-bottom: 2vw;
+}
+
   .heading-section h1 {
     font-family: "TT Commons Regular";
     font-size: 3rem;
