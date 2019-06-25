@@ -41,7 +41,7 @@ iframe {
 }
 
 header {
-  height: 110vh;
+  height: 100vh;
   background-image: url("../images/diamonds.svg");
   background-size: cover;
 
@@ -94,6 +94,10 @@ hr {
   font-size: 2.5rem;
   color: white;
   text-transform: uppercase;
+}
+
+.heading-title {
+  margin-top: 0;
 }
 
 .heading-title span {
@@ -151,6 +155,7 @@ hr {
 }
 
 .project-info {
+  margin-left: 18vw;
   font-family: "TT Commons Medium";
   font-size: 5rem;
   line-height: 6.5rem;
@@ -162,7 +167,7 @@ hr {
 .project-info p {
   position: absolute;
   z-index: 3;
-  margin-left: 15vw;
+  /* margin-left: 15vw; */
   width: 60%;
 }
 
@@ -177,14 +182,14 @@ hr {
   position: absolute;
   z-index: 2;
   width: 32%;
-  margin-left: 15vw;
+  /* margin-left: 15vw; */
   margin-top: 5vw;
 }
 
 .project-info img:nth-of-type(2) {
   position: absolute;
   z-index: 1;
-  margin-left: 46vw;
+  margin-left: 28vw;
   margin-top: 5vw;
   width: 50%;
   -webkit-filter: grayscale(100%);
@@ -192,9 +197,9 @@ hr {
   transition: 0.5s;
 }
 
-/* .ideas-info {
+.ideas-info {
   padding-top: 8vw;
-} */
+}
 
 .ideas-info p {
   font-family: "TT Commons Regular";
@@ -202,7 +207,7 @@ hr {
   line-height: 2.4rem;
   color: white;
   width: 55%;
-  margin-left: 15vw;
+  margin-left: 18vw;
 }
 
 .ideas-info p:first-of-type {
@@ -240,7 +245,7 @@ hr {
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: flex-start;
-  margin-left: 15vw;
+  margin-left: 18vw;
   margin-bottom: 12vw;
 }
 
@@ -249,7 +254,7 @@ hr {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-left: 15vw;
+  margin-left: 18vw;
   margin-bottom: 12vw;
 }
 
@@ -268,7 +273,7 @@ hr {
   color: white;
   width: 50vw;
 
-  margin-left: 15vw;
+  margin-left: 18vw;
   margin-bottom: 12vw;
 }
 
@@ -746,7 +751,7 @@ hr {
 }
 
 .links, .email, .curator {
-  margin-left: 15vw;
+  margin-left: 18vw;
   padding-bottom: 6vw;
 }
 
@@ -836,16 +841,63 @@ h3 {
 
   .my-info p {
     width: 65%;
+    margin-left: -20vw;
+    padding-right: 37vw;
   }
 
   #about-project {
     height: 60vw;
   }
 
+  .project-info {
+    margin-left: 10vw;
+  }
+
   .ideas-info p {
     font-size: 3rem;
     line-height: 3.6rem;
+    margin-left: 10vw;
   }
+
+  .pic-1, .pic-3, .pic-6 {
+    margin-left: 10vw;
+  }
+
+  .pic-2, .pic-5, .pic-7 {
+    margin-left: 10vw;
+  }
+
+  .branding-info {
+    margin-left: 10vw;
+    padding-top: 10vw;
+  }
+
+  .branding-info img {
+    width: 50vw;
+}
+
+  .part-1 .text h2, .part-2 h2, .part-3 .text h2, .part-4 .text-info .text h2, .part-5 .text h2 {
+    font-size: 4rem;
+  }
+
+  .part-1 .text p, .part-2 p, .part-3 .text p, .part-4 .text-info .text p, .part-5 .text p, .part-6 p {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    width: 40vw;
+  }
+
+  .part-1 .text p {
+    width: 45vw;
+   }
+
+   .part-4 img, .part-5 img {
+     width: 45vw;
+   }
+
+   .part-5 .colors-2 p {
+     font-size: 2rem;
+     line-height: 2.4rem;
+   }
 
   .menu {
     font-size: 4rem;
@@ -886,7 +938,7 @@ h3 {
   }
 
   .ideas-info p:first-of-type {
-    margin-top: -12vw;
+    /* margin-top: -12vw; */
   }
 
   .part-3 img {
@@ -955,7 +1007,7 @@ h3 {
   }
 
   .content img:nth-of-type(2) {
-    margin-left: 10vw;
+    margin-left: 16vw;
   }
 
   .posters-images img, .posters-description img {
@@ -963,7 +1015,7 @@ h3 {
   }
 
   .graphic-posters {
-    padding-top: 8vw;
+    padding-top: 10vw;
     margin-left: 10vw;
     margin-right: 10vw;
     margin-bottom: 25vw;
@@ -1013,16 +1065,51 @@ h3 {
   .web-posters {
     margin-left: 10vw;
   }
+
+  #book {
+    margin-left: 10vw;
+  }
+
+  .links, .email, .curator {
+    margin-left: 10vw;
+    padding-bottom: 6vw;
+  }
+
+  #contacts p, #contacts a {
+    font-size: 3rem;
+  }
+
+  .links {
+    padding-top: 10vw;
+  }
+
+  .book-description p {
+    font-size: 3rem;
+    line-height: 3.6rem;
+  }
+
+  .book-description {
+    padding-top: 10vw;
+   }
+
+   .pic-1 img, .pic-2 img, .pic-3 img, .pic-5 img, .pic-6 img, .pic-7 img {
+    width: 50%;
+   }
 }
 
 @media (max-width: 375px) {
   .heading-title span {
-    font-size: 15rem;
+    font-size: 19rem;
   }
 
   hr {
     height: 3px;
   }
+
+  .heading-title {
+    margin-top: -15vw;
+  }
+
 
   .heading-section h1 {
     font-size: 5rem;
